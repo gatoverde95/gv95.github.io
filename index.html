@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatoVerde 95 Studios & Software</title>
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --text-color: #202124;
+            --header-background: #ffffff;
+            --nav-background: #f8f9fa;
+            --button-background: #1a73e8;
+            --button-hover-background: #185abc;
+            --link-color: #1a73e8;
+            --link-hover-color: #185abc;
+            --aside-background: #f8f9fa;
+            --aside-shadow: rgba(0, 0, 0, 0.1);
+            --icon-size: 24px; /* Tamaño de los íconos de redes sociales */
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--header-background);
+            color: var(--text-color);
+            padding: 1em 2em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: var(--nav-background);
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #5f6368;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #e8f0fe;
+            color: var(--link-color);
+        }
+
+        main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            background: var(--background-color);
+            margin-bottom: 2em;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px var(--aside-shadow);
+        }
+
+        section h2 {
+            margin-top: 0;
+            font-size: 1.8em;
+            font-weight: 400;
+        }
+
+        .project-images {
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+        }
+
+        .project-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px var(--aside-shadow);
+        }
+
+        button {
+            background-color: var(--button-background);
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--button-hover-background);
+        }
+
+        aside {
+            background-color: var(--aside-background);
+            padding: 1em;
+            margin-top: 2em;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px var(--aside-shadow);
+            text-align: center;
+        }
+
+        aside h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        aside ul li {
+            margin-bottom: 0;
+        }
+
+        aside ul li a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: var(--icon-size);
+        }
+
+        aside ul li a:hover {
+            color: var(--link-hover-color);
+        }
+
+        footer {
+            background-color: var(--nav-background);
+            color: #5f6368;
+            text-align: center;
+            padding: 1em 0;
+            border-top: 1px solid #e0e0e0;
+            position: static;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -1px 3px var(--aside-shadow);
+        }
+
+        footer p {
+            margin: 0.5em 0;
+        }
+
+        .collaborate-section {
+            background: var(--background-color);
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px var(--aside-shadow);
+            text-align: center;
+        }
+
+        .collaborate-section h2 {
+            font-size: 1.8em;
+            font-weight: 400;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo de GatoVerde 95 Studios">
+        <h1>GatoVerde95</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#soporte">Soporte</a></li>
+            <li><a href="#conectame">Conéctame!</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="proyectos">
+            <h2>CuerdOS GNU/Linux</h2>
+            <p>CuerdOS es una distribución GNU/Linux de origen español enfocada en la estabilidad y el rendimiento constante en computadoras de cualquier rango, sin perder ninguna funcionalidad. Esta distribución no es solo un derivado con un entorno de escritorio personalizado, sino que tiene una serie de optimizaciones y mejoras de rendimiento, incluida la optimización de servicios activos, mejoras en el uso del procesador, entre muchas otras.</p>
+            <div class="project-images">
+                <img src="resources/cuerdos-standard.webp" alt="Captura de pantalla de CuerdOS GNU/Linux 1" width="600" height="360">
+                <img src="resources/cuerdos-legacy.webp" alt="Captura de pantalla de CuerdOS GNU/Linux 2" width="600" height="360">
+            </div>
+            <h3></h3>
+            <button onclick="location.href='https://cuerdos.github.io/'">Visitar y Descargar</button>
+        </section>
+        <section>
+            <h2>CuerdOS Yelena Hello</h2>
+            <p>Bienvenida de CuerdOS GNU/Linux, para darle su primer bienvenida a nuestra distribución. Potenciada por Software libre y tecnologías libres como Python & Thonny, R & RStudio y Go & Geany.</p>
+            <div class="project-images">
+                <img src="resources/yel_hello1.png" alt="Captura de pantalla de CuerdOS Yelena Hello 1" width="600" height="360">
+                <img src="resources/yel_hello2.png" alt="Captura de pantalla de CuerdOS Yelena Hello 2" width="600" height="360">
+            </div>
+             <h3></h3>
+            <button onclick="location.href='https://github.com/gatoverde95/CuerdOS-Yelena'">Visitar en GitHub</button>
+        </section>
+        <section>
+            <h2>CuerdOS Spins</h2>
+            <p>Los CuerdOS Spins son variaciones de la distro con entornos de escritorio alternativos al proyecto original y una selección de aplicaciones propia, por lo tanto ofrecen formas diferentes de experimentar CuerdOS. Estos proyectos son desarrollados por miembros de la comunidad.</p>
+            <div class="project-images">
+                <img src="resources/kuerdos.webp" alt="Captura de pantalla de CuerdOS GNU/Linux 1" width="600" height="360">
+                <img src="resources/cuerdos-cinnamix.webp" alt="Captura de pantalla de CuerdOS GNU/Linux 2" width="600" height="360">
+            </div>
+            <h3></h3>
+            <button onclick="location.href='https://cuerdos.github.io/spins.html'">Visitar y Descargar</button>
+        </section>
+        <section id="conectame">
+            <h2>Conéctame!</h2>
+            <p>Aquí puedes encontrar nuestros canales de comunicación y redes sociales.</p>
+            <aside>
+                <ul>
+                    <li><a href="https://github.com/gatoverde95"><img src="resources/gthub.png" alt="GitHub" /></a></li>
+                    <li><a href="https://x.com/gatoverde95?t=sayD8MPO4Xsjl6baHetaqg&s=09"><img src="resources/x.png" alt="Twitter" /></a></li>
+                    <li><a href="https://mastodon.social/@gatoverde95"><img src="resources/mast.png" alt="Mastodon" /></a></li>
+                    <li><a href="https://www.reddit.com/u/GatoVerde95/s/q2TlWGYFM7"><img src="resources/redd.png" alt="Reddit" /></a></li>
+                    <li><a href="https://t.me/GatoVerde95"><img src="resources/tlgm.png" alt="Telegram" /></a></li>
+                </ul>
+            </aside>
+        </section>
+        <section class="collaborate-section">
+            <h2>Colabora al software libre. Se parte de nuestra comunidad. Acerca de GNU, GPL y la FSF.</h2>
+            <button onclick="location.href='https://www.gnu.org/'">GNU</button>
+            <button onclick="location.href='https://www.fsf.org/'">Free Software Foundation</button>
+            <button onclick="location.href='https://www.gnu.org/licenses/licenses.html'">Licencias GNU</button>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Esta pagina esta hecha en Playhouse con licencia GNU GPL. 2026</p>
+    </footer>
+</body>
+</html>
+
